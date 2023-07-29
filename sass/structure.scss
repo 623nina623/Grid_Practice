@@ -1,0 +1,103 @@
+.container {
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: auto;
+    gap: 25px;
+
+    div {
+        background-color: #fafafa;
+        border: 1px solid #797979;
+        padding: 10px;
+    }
+
+    h2 {
+        margin: 0;
+        font-weight: 800;
+    }
+
+    p {
+        margin: 0;
+        padding-bottom: 10px;
+    }
+
+    .Examples {
+        grid-column:  1/4;
+        grid-row: 1/2;
+        @media only screen and (max-width:1000px){
+            grid-column: 4/6;
+            grid-row: 3/4;
+        }
+        @media only screen and (max-width:768px){
+            grid-column: 1/8;
+            grid-row: 1/2;
+        }
+    }
+
+    .Patterns {
+        grid-column:  4/8;
+        grid-row: 1/2;
+        @media only screen and (max-width:768px){
+            grid-column: 1/8;
+            grid-row: 2/3;
+        }
+    }
+
+    .Resources {
+        grid-column:  1/6;
+        grid-row: 2/3;
+        @media only screen and (max-width:768px){
+            grid-column: 1/8;
+            grid-row: 3/4;
+        }
+    }
+
+    .Layout {
+        grid-column: 6/8;
+        grid-row: 2/3;
+        @media only screen and (max-width:768px){
+            grid-column: 1/8;
+            grid-row: 4/5;
+        }
+    }
+
+    .Questions {
+        grid-column: 1/4;
+        grid-row: 3/4;
+        @media only screen and (max-width:768px){
+            grid-column: 1/8;
+            grid-row: 5/6;
+        }
+    }
+
+    .About {
+        grid-column: 4/6;
+        grid-row: 3/4;
+        @media only screen and (max-width:1000px){
+            grid-column:  1/4;
+            grid-row: 1/2;
+        }
+        @media only screen and (max-width:768px){
+            grid-column: 1/8;
+            grid-row: 6/7;
+        }
+    }
+
+    .News {
+        grid-column: 6/8;
+        grid-row: 3/4;
+        @media only screen and (max-width:768px){
+            grid-column: 1/8;
+            grid-row: 7/8;
+        }
+    }
+
+    .Bugs {
+        grid-column: 1/8;
+        grid-row: 4/5;
+        @media only screen and (max-width:768px){
+            grid-column: 1/8;
+            grid-row: 8/9;
+        }
+    }
+}
